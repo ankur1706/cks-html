@@ -11,9 +11,11 @@ $theme-color-second:#FF579B;
 
 
 
-.bg-pro {
-	background-position: center;
+.bg-size-cover {
 	background-size: cover;
+}
+.bg-position-top {
+	background-position: top;
 }
 
 .h-100vh {
@@ -24,12 +26,23 @@ $theme-color-second:#FF579B;
 }
 a.navbar-brand {
   width: 170px;
-
 }
 .fix-header-height {
 	height: 80px;
 }
+.overflow-hidden {
+	overflow: hidden;
+}
+.fw-400 {
+	font-weight: 400;
+}
 
+.color-dark-purple {
+	color: #4f2777;
+}
+.color-second {
+	color: $theme-color-second;
+}
 
 
 .theme-btn-white-outline {
@@ -37,6 +50,7 @@ a.navbar-brand {
   border-color: white;
   padding: 8px 50px;
   border-radius: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   &:hover {
   	background: white;
   	border-color: white;
@@ -46,6 +60,8 @@ a.navbar-brand {
 .theme-btn-second {
 	border-color: $theme-color-primary;
   border-radius: 0;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.15);
+  color: $theme-color-primary; 
 	&:hover {
 		background: $theme-color-second;
 		border-color: $theme-color-second;
@@ -74,4 +90,169 @@ a.navbar-brand {
 			}
 		}
 	}
+}
+.style-image-1 {
+  position: absolute;
+  top: 33%;
+  width: 40%;
+  z-index: 0;
+  left: 37%;
+  opacity: 0.16;
+  filter: grayscale(100%);
+  transform: rotate(-11deg);
+}
+.style-image-2 {
+  position: absolute;
+  bottom: 0px;
+  min-width: 4000px;
+  height: 230px;
+  background: white;
+  z-index: 0;
+  right: 0%;
+  opacity: 1;
+  transform: rotate(8deg);
+}
+
+
+/*Photo Grid*/
+
+
+.portfolio {
+	display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+} 
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.column .portfolio-img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.portfolio {
+	.column {
+		.portfolio-img {
+			position: relative;
+			/*width:100%;*/
+			&:before {
+				content: 'KNOW MORE...';
+				color: white;
+				text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
+				font-weight: 400;
+				display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    position: absolute;
+		    /*top: 15px;*/
+		    width: 100%;
+		    height: 100%;
+		    background: -moz-linear-gradient(-45deg, rgba(98,98,251,1) 0%, rgba(206,90,185,0.7) 69%, rgba(255,87,155,0.5) 100%);
+				background: -webkit-linear-gradient(-45deg, rgba(98,98,251,1) 0%,rgba(206,90,185,0.7) 69%,rgba(255,87,155,0.5) 100%);
+				background: linear-gradient(135deg, rgba(98,98,251,1) 0%,rgba(206,90,185,0.7) 69%,rgba(255,87,155,0.5) 100%);
+		    /*left: 14px;*/
+		    opacity: 0;
+		    visibility: hidden;
+		    -moz-transition: .4s;
+		    -webkit-transition: .4s;
+		    -ms-transition: .4s;
+		    -o-transition: .4s;
+		    transition: .4s;
+			}
+			&:hover {
+				&:before {
+					/*top: 11px;*/
+			    width: 100%;
+			    height: 100%;
+			    /*left: 12px;*/
+			    opacity: 1;
+			    visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*animation*/
+.scale-in-bl {
+	-webkit-animation: scale-in-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 700ms both;
+	        animation: scale-in-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 700ms both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-bl
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-bl {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-bl {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
 }
