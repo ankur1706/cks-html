@@ -1,0 +1,26 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+}
+
+
+.bg-pro {
+	background-position: center;
+	background-size: cover;
+}
+.h-100vh {
+	height: 100vh;
+}
+
+a.navbar-brand {
+    width: 170px;
+}
+
+.theme-gradient-transperent {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6262fb+0,ff579b+100&0.75+0,0.5+69,0.5+100 */
+background: -moz-linear-gradient(-45deg, rgba(98,98,251,0.75) 0%, rgba(206,90,185,0.5) 69%, rgba(255,87,155,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(98,98,251,0.75) 0%,rgba(206,90,185,0.5) 69%,rgba(255,87,155,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(98,98,251,0.75) 0%,rgba(206,90,185,0.5) 69%,rgba(255,87,155,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf6262fb', endColorstr='#80ff579b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
