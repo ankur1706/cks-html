@@ -2,6 +2,7 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
 	font-size: 17px;
+	overflow: hidden;
 }
 
 /********************common css**************/
@@ -44,6 +45,9 @@ a.navbar-brand {
 	color: $theme-color-second;
 }
 
+.font-18 {
+	font-size: 18px;
+}
 
 .theme-btn-white-outline {
   color: white;
@@ -103,9 +107,9 @@ a.navbar-brand {
 }
 .style-image-2 {
   position: absolute;
-  bottom: 0px;
+  bottom: -150px;
   min-width: 4000px;
-  height: 230px;
+  height: 350px;
   background: white;
   z-index: 0;
   right: 0%;
@@ -202,7 +206,13 @@ a.navbar-brand {
 }
 
 
-
+.services {
+	.servise-wrepper {
+		&:hover {
+			
+		}
+	}
+}
 
 
 
