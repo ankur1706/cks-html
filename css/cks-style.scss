@@ -3,7 +3,9 @@ body {
 	font-weight: 300;
 	font-size: 17px;
 }
-
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;
+}
 /********************common css**************/
 $theme-color-primary:#6262fb;
 $theme-color-second:#FF579B;
@@ -216,11 +218,59 @@ a.navbar-brand {
 	}
 }
 
+.testimonials {
+	.testimonial-container {
+    background: #ff429c;
+    color: white;
+    box-shadow: 0px 40px 50px -30px rgba(0, 0, 0, 0.5);
+    .quote-img {
+    	opacity: .1;
+    	width: 15%;
+    }
+    .carousel-inner {
+    	.carousel-item {
+    		.testimonial-message {
+			    line-height: 30px;
+				}
+				.testmonial-name {
+					color: white;
+					font-weight: 500;
+					opacity: .6;
+					margin-top: 20px; 
+				}
+    	}
+    }
+    .carousel-indicators {
+			bottom: 0px;
+		}
+	}
+}
 
-
-
-
-
+footer{
+	font-size: 20px;
+	.follow-us {
+		a {
+			text-decoration: none;
+		}
+		.social-link {
+	    height: 70px;
+	    width: 70px;
+	    border: 2px solid #4f2777;
+	    border-radius: 50%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    color: #4f2777;
+	    margin-right: 20px;
+	    transition: 200ms all;
+	    &:hover {
+	    	background-color: #4f2777;
+	    	color: white;
+	    }
+		}
+	}
+}
+	
 
 
 
