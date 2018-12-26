@@ -68,6 +68,9 @@ a.navbar-brand {
   #main-header .navbar-expand-sm .navbar-nav .nav-link:hover {
     color: #6262fb; }
 
+.banner-img {
+  background-image: url(../images/banner.jpeg); }
+
 .style-image-1 {
   position: absolute;
   top: 33%;
